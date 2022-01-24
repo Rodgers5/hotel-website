@@ -1,0 +1,162 @@
+body{
+    background-color: #248232;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+
+.element{
+    width: 80%;
+    background-color: #ffffff;
+    margin: 0 auto;
+
+}
+
+.title{
+    text-transform: uppercase;
+    color:blue;
+    text-align: left;
+    padding: 30px;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.title:hover{
+    text-decoration: underline;
+    color: brown;
+    font-weight: 500;
+    transition: .5s ease-in-out;
+}
+
+.top-menu{
+    background-color: brown;
+    overflow: hidden;
+}
+/* Nesting in CSS */
+
+.top-menu ul li{
+    list-style-type: none;
+    float: left;
+    border-right: 2px solid rgb(238, 9, 9);
+    padding: 15px 20px;
+}
+
+.top-menu ul li a{
+    text-decoration: none;
+    color: green;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.top-menu ul li:hover{
+    background-color: purple;
+}
+
+/* Hover effects on a chil */
+.top-menu ul li:hover a{
+    text-decoration: underline;
+    color: red;
+}
+
+/* Image art */
+/* .main-image img{
+    width: 100%;
+    height: 60vh;
+} */
+
+.main-image{
+    background-image: url('./STREET\ K.jpg');
+    background-size: cover;
+    min-height: 70vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+.main-image h2{
+    color: red;
+    background-color: #ffffff;
+    padding: 30px;
+    opacity: .6;
+    border: 2px solid #248232;
+}
+.btn{
+    background-color: #ffffff;
+    color: blue;
+    border: 2px solid red;
+    padding: 8px 32px;
+    border-radius: 10px;
+    cursor: grabbing;
+}
+.btn:hover{
+    background-color: chartreuse;
+    color: blueviolet;
+    transition-duration:.2s;
+}
+.Welcome p{
+    width: 60%;
+    text-align: center;
+    font-weight: 500;
+    line-height: 32px;
+}
+.Welcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.row-2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.col{
+    max-width: 50;
+}
+
+.img-fluid{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.px-3{
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.py-4{
+    padding-top: 32px;
+    padding-bottom: 40px;
+}
+
+.text-start{
+    text-align: left !important;
+}
+.text-center{
+    text-align: center !important;
+}
+.text-end{
+    text-align: right !important;
+}
+
+.credit{
+    background: linear-gradient(60deg, blue, rgb(58, 58, 231));
+}
+.credit p{
+    color: red;
+    font-size: 24px;
+}
+
+.credit:hover{
+    transform: rotate(15deg);
+    transition-duration: .3s;
+
+}
